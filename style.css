@@ -1,0 +1,31 @@
+.field{
+    border:1px coral solid;
+    height: 300px;
+    margin-top:20px;
+}
+h2{
+    text-align: center;
+}
+img{
+    width:20%;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    position: relative;
+    left:310px;
+    transition: transform 2s ease-out 0.2s;
+}
+.bat{
+    transition: transform  0.2s ease-in;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.field:hover .ball{
+    transform: translate(500px,-100px);
+}
